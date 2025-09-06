@@ -96,3 +96,92 @@
     border: none;
     
 }
+
+/*Projetos*/
+.projetos{
+    background-color: #dfaeae;
+    align-items: center;
+    display: row;
+    justify-content: center;
+    
+}
+.projetos-linha1{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: column;
+    width: 80%; 
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4%;
+
+}
+.projetos-titulo{
+    padding-left: 0.300rem;  
+    padding-right: 0.300rem;
+    background-color: #bef264; 
+    border-radius: 0.400rem;   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.600rem;
+    color: #000000;
+    font-size: 2.25rem;   
+    font-weight: 500;     
+    font-family: 'Space Grotesk', sans-serif;
+    
+}
+.projetos-subtitulo{
+    width: auto;
+    color: #000000;
+    font-size: 1.8rem;  
+    font-weight: 500;
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.projetos-card {
+  background-color: #191A23;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 100px;
+  border-radius: 60px;
+  padding: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.projetos-subcard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+  justify-items: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.projetos-subcard-textos {
+  padding: 10px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  height: 100%;
+  width: 65%; 
+  font-size: 24.50px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  color: white;
+  line-height: 120%;
+}
+.projetos-subcard-vejaMais {
+  background-color: greenyellow;
+  margin-top: auto; 
+  text-align: start;
+  padding: 5px;
+  width: 64%; 
+  cursor: pointer;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+}
