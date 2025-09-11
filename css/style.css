@@ -401,6 +401,7 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+
 .img-footer{
     width: 550px;
     padding-top: 150px;
@@ -408,9 +409,38 @@ html, body {
 .footer-conteudo{
     width: 90%;
     height: 90%;
-    border: 1px solid white;
+  
 }
 .text-footer{
+    margin-top: -170px;
     color: white;
     margin-left: 50%;
+    display: inline-block;
+    line-height: 50px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+}
+.title-footer{
+    background-color: #B9FF66;
+    color: black;
+    width: 40%;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    line-height: 30px;
+}
+.baixo-footer{
+    color: white;
+    display: flex;
+    font-size: 10px;
+    margin-top: 2.5%;
+    gap: 100px;
+    display: flex;
+    padding-top: 10px;
+}
+.icon-footer{
+    width: 60px;
+    margin-top: -10px;
+}
+hr{
+    margin-top: 50px;
 }
