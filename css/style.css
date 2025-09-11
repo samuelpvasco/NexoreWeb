@@ -36,8 +36,6 @@ html, body {
     margin-left: 50px;
     user-select: none;
     pointer-events: none;
-    user-select: none;
-    pointer-events: none;
 }
 
 .links-navbar{
@@ -81,7 +79,7 @@ html, body {
 .intro{
     width: 100%;
     gap: 20%;
-    margin-top: 100px;
+    margin-top: 150px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -120,7 +118,7 @@ html, body {
 .services{
   width: 95vw;
   height: 20vh;
-  margin-top: 2vh;
+  margin-top: 4vh;
   margin-left: 2vw;
   display: flex;
   align-items: center;
@@ -393,4 +391,26 @@ html, body {
     justify-content: center;
     align-content: center;
 }
-
+/*Footer*/
+.footer{
+    width: 90%;
+    height: 550px;
+    background-color: #191A23;
+    border-radius: 50px 50px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-footer{
+    width: 550px;
+    padding-top: 150px;
+}
+.footer-conteudo{
+    width: 90%;
+    height: 90%;
+    border: 1px solid white;
+}
+.text-footer{
+    color: white;
+    margin-left: 50%;
+}
