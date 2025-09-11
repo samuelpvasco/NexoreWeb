@@ -423,7 +423,7 @@ html, body {
 .title-footer{
     background-color: #B9FF66;
     color: black;
-    width: 40%;
+    width: 27%;
     border-radius: 10px;
     margin-bottom: 0px;
     line-height: 30px;
@@ -440,6 +440,7 @@ html, body {
 .icon-footer{
     width: 60px;
     margin-top: -10px;
+    padding-left: 50px;
 }
 hr{
     margin-top: 50px;
