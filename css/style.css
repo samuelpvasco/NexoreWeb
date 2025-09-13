@@ -42,19 +42,21 @@ html, body {
     display: flex;
     width: 700px;
     height: 50px;
-    align-items: center;
+    align-items: center;    
     justify-content: space-between;
 }
 
 .navbar-item{
     display: inline-block;
+    height: 100%;
+    justify-content: center;
     cursor: pointer;
     transition: 0.3s ease, transform 0.3s ease;
-    
 }
 
 .linha{
-    height: 1px;
+    margin-top: 0;
+    height: 0.5px;
     transform: scaleX(0);
     transform-origin: left;
     width: 0;
@@ -418,12 +420,12 @@ html, body {
     display: inline-block;
     line-height: 50px;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 12px;
+    font-size: 17px;
 }
 .title-footer{
     background-color: #B9FF66;
     color: black;
-    width: 27%;
+    width: 40%;
     border-radius: 10px;
     margin-bottom: 0px;
     line-height: 30px;
@@ -431,7 +433,7 @@ html, body {
 .baixo-footer{
     color: white;
     display: flex;
-    font-size: 10px;
+    font-size: 15px;
     margin-top: 2.5%;
     gap: 100px;
     display: flex;
