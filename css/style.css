@@ -509,7 +509,116 @@ body {
     display: inline-block;
     font-weight: 700;
 }
+.content-talk{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom:  10%;
+    font-family: 'Space Grotesk';
+}
+.form-bg{
+    width: 80vw;
+    height: 85vh;
+    background-color: #F3F3F3;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
 
+.form-illustration{
+    height: 550px;
+    margin-left: 190px;
+}
+.form-talk{
+    width: 40vw;
+    margin-left: 90px;
+}
+.radio-talk{
+    font-family: "Space Grotesk";
+    font-weight: bold;
+
+}
+input[type="radio"] {
+      display: none;
+    }
+
+    /* container dos radios */
+    .radio-group {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* estilo padrão da label */
+    .radio-label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 24px;
+    }
+
+    .radio-label::before {
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 1px solid black;
+      border-radius: 50%;
+      margin-right: 8px;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"]:checked + .radio-label::before {
+  background-color: #b2ff59; /* verde-limão */
+  border: 1px solid black;
+  box-shadow: inset 0 0 0 3px #fff; /* cria o "gap" branco entre o verde e a borda */
+}
+
+    /* inputs de texto */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid black;
+      border-radius: 8px;
+      font-size: 14px;
+      box-sizing: border-box;
+      font-family: 'Space Grotesk';
+    }
+
+    textarea {
+        resize: none;
+      min-height: 200px;
+      max-height: 200px;
+    }
+
+    /* botão */
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #11111a;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-family: 'Space Grotesk';
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
 /*Footer*/
 .footer {
     width: 100%;
