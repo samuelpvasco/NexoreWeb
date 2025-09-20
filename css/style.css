@@ -1,24 +1,25 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
 
-html, body {
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
-    
+
 }
 
-.conteudo-page{
+.conteudo-page {
     margin-top: 30px;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-.navBar{
+.navBar {
     background-color: white;
     width: 100%;
     height: 100px;
@@ -32,7 +33,7 @@ html, body {
     font-weight: bold;
 }
 
-.img-logo{
+.img-logo {
     height: 70px;
     width: auto;
     margin-left: 50px;
@@ -40,15 +41,15 @@ html, body {
     pointer-events: none;
 }
 
-.links-navbar{
+.links-navbar {
     display: flex;
     width: 700px;
     height: 50px;
-    align-items: center;    
+    align-items: center;
     justify-content: space-between;
 }
 
-.navbar-item{
+.navbar-item {
     display: inline-block;
     height: 100%;
     justify-content: center;
@@ -56,7 +57,7 @@ html, body {
     transition: 0.3s ease, transform 0.3s ease;
 }
 
-.linha{
+.linha {
     margin-top: 0;
     height: 0.5px;
     transform: scaleX(0);
@@ -72,7 +73,7 @@ html, body {
     background-color: black;
 }
 
-.btn-tema{
+.btn-tema {
     margin-right: 50px;
     cursor: pointer;
     user-select: none;
@@ -80,7 +81,7 @@ html, body {
 
 
 /*Introdução*/
-.intro{
+.intro {
     width: 100%;
     gap: 20%;
     margin-top: 140px;
@@ -89,74 +90,80 @@ html, body {
     justify-content: center;
 }
 
-.texto-intro{
+.texto-intro {
     width: 34%;
     font-family: 'Space Grotesk', sans-serif;
 }
 
-.texto-grande{
+.texto-grande {
     font-size: 55px;
     font-weight: 700;
 }
 
-.texto-pequeno{
+.texto-pequeno {
     margin-top: 20px;
     width: 94%;
     font-size: 20px;
     font-weight: 500;
 }
-.btn-agenda{
+
+.btn-agenda {
     width: 250px;
     height: 60px;
     margin-top: 50px;
     cursor: pointer;
     background-color: #191A23;
-    color:white;
+    color: white;
     font-size: 18px;
     border-radius: 10px;
     border: none;
     font-family: 'space grotesk', sans-serif;
     font-weight: bold;
 }
+
 /*Serviços*/
-.services{
-  width: 95vw;
-  height: 10vh;
-  margin-top: 1vh;
-  margin-left: 2vw;
-  display: flex;
-  align-items: center;
+.services {
+    width: 95vw;
+    height: 10vh;
+    margin-top: 1vh;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
 }
-.servicesContent{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
+
+.servicesContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
-.sectionTitle{
-  padding: 0.5vw;
-  border-radius: 10px;
-  text-align: center;
-  width: 14vw;
-  font-size: 2.5rem;
-  background-color: #B9FF66;
-  font-family: "Space Grotesk";
-  color: rgb(0, 0, 0);
-  margin-top: 2vh;
-  display: inline-block;
-  font-weight: 700;
+
+.sectionTitle {
+    padding: 0.5vw;
+    border-radius: 10px;
+    text-align: center;
+    width: 14vw;
+    font-size: 2.5rem;
+    background-color: #B9FF66;
+    font-family: "Space Grotesk";
+    color: rgb(0, 0, 0);
+    margin-top: 2vh;
+    display: inline-block;
+    font-weight: 700;
 }
-.servicesDescription{
-  width: 50vw;
-  font-size: 1.6rem;
-  font-family: "Space Grotesk";
-  color: rgb(0, 0, 0) ;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  display: inline-block;
-  font-weight: bold;
-  padding-top: 1vh;
+
+.servicesDescription {
+    width: 50vw;
+    font-size: 1.6rem;
+    font-family: "Space Grotesk";
+    color: rgb(0, 0, 0);
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: inline-block;
+    font-weight: bold;
+    padding-top: 1vh;
 }
+
 .services-card-container {
     width: 97%;
     height: 38vh;
@@ -181,11 +188,12 @@ html, body {
     box-shadow: 0px 8px 0px #121218;
     border: 2px solid #121218;
 }
-.black-bg{
+
+.black-bg {
     background-color: #191A23;
 }
 
-.green-bg{
+.green-bg {
     background-color: #B9FF66;
 }
 
@@ -196,7 +204,7 @@ html, body {
     font-size: 2vw;
     font-family: 'Space Grotesk', sans-serif;
     color: #191A23;
-    border-radius:  10px 10px 10px 0px;
+    border-radius: 10px 10px 10px 0px;
     padding: 4px;
     margin-top: 40px;
 }
@@ -217,7 +225,7 @@ html, body {
     margin-top: 60px;
     cursor: pointer;
     user-select: none;
-    pointer-events:visible;
+    pointer-events: visible;
 }
 
 .service-icon {
@@ -226,40 +234,44 @@ html, body {
     user-select: none;
     pointer-events: none;
 }
+
 /*Projetos e Equipe*/
 
-.projetos-linha1{
-  width: 95vw;
-  height: 20vh;
-  margin-top: 2vh;
-  margin-left: 3vw;
-  display: flex;
-  align-items: center;
+.projetos-linha1 {
+    width: 95vw;
+    height: 20vh;
+    margin-top: 2vh;
+    margin-left: 3vw;
+    display: flex;
+    align-items: center;
 }
-.projetos-e-equipe-titulo{
-  padding: 0.5vw;
-  border-radius: 10px;
-  text-align: center;
-  width: 14vw;
-  font-size: 2.5rem;
-  background-color: #B9FF66;
-  font-family: "Space Grotesk";
-  color: rgb(0, 0, 0);
-  margin-top: 2vh;
-  display: inline-block;
-  font-weight: 700;
+
+.projetos-titulo {
+    padding: 0.5vw;
+    border-radius: 10px;
+    text-align: center;
+    width: 14vw;
+    font-size: 2.5rem;
+    background-color: #B9FF66;
+    font-family: "Space Grotesk";
+    color: rgb(0, 0, 0);
+    margin-top: 2vh;
+    display: inline-block;
+    font-weight: 700;
 }
-.projetos-e-equipe-subtitulo{
-  width: 50vw;
-  font-size: 1.6rem;
-  font-family: "Space Grotesk";
-  color: rgb(0, 0, 0) ;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  display: inline-block;
-  font-weight: bold;
-  padding-top: 1vh;
+
+.projetos-e-equipe-subtitulo {
+    width: 50vw;
+    font-size: 1.6rem;
+    font-family: "Space Grotesk";
+    color: rgb(0, 0, 0);
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: inline-block;
+    font-weight: bold;
+    padding-top: 1vh;
 }
+
 .services {
     padding: 80px 0;
     text-align: center;
@@ -270,7 +282,7 @@ html, body {
     margin-bottom: 20px;
 }
 
-.services > .container > p {
+.services>.container>p {
     font-size: 18px;
     margin-bottom: 40px;
     max-width: 600px;
@@ -316,22 +328,26 @@ html, body {
     margin-left: 8%;
     margin-right: 8%;
 }
+
 .projetos-subcard {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     width: 100%;
 }
+
 .projetos-coluna {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0 20px;
-    border-right: 1px solid rgba(255,255,255,0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 .projetos-coluna:last-child {
-    border-right: none; 
+    border-right: none;
 }
+
 .projetos-subcard-textos {
     font-size: 18px;
     font-family: 'Space Grotesk', sans-serif;
@@ -342,6 +358,7 @@ html, body {
     padding: 15px;
     text-align-last: left;
 }
+
 .projetos-subcard-vejaMais {
     color: greenyellow;
     text-align: start;
@@ -356,15 +373,31 @@ html, body {
 }
 
 /*Equipe*/
-.equipe{
+.equipe {
+    width: 100%;
     margin-top: 80px;
-    margin-bottom: 190px;
     align-items: center;
-    display: column;
-    justify-content: center;
 }
 
-.equipe-card{
+.equipe-titulo {
+    padding: 0.5vw;
+    border-radius: 10px;
+    text-align: center;
+    width: 19vw;
+    font-size: 2.5rem;
+    background-color: #B9FF66;
+    font-family: "Space Grotesk";
+    color: rgb(0, 0, 0);
+    margin-top: 2vh;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.equipe-linha1 {
+    margin-left: 200px;
+}
+
+.equipe-card {
     width: 300px;
     height: 100px;
     padding-left: 35px;
@@ -384,7 +417,8 @@ html, body {
     display: inline-flex;
     font-family: 'Space Grotesk';
 }
-.equipe-subcard{
+
+.equipe-subcard {
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
@@ -394,7 +428,8 @@ html, body {
     margin-top: 0px;
 
 }
-.equipe-subcard-nome-e-img{
+
+.equipe-subcard-nome-e-img {
     align-self: stretch;
     justify-content: center;
     align-items: center;
@@ -404,7 +439,8 @@ html, body {
     align-items: center;
     gap: 50px;
     display: flex;
-    img{
+
+    img {
         width: 45px;
         background-color: #bef264;
         border-radius: 100%;
@@ -412,7 +448,8 @@ html, body {
         justify-self: end;
         align-self: end;
     }
-    p{
+
+    p {
         color: black;
         font-size: 20px;
         padding-left: 10px;
@@ -423,23 +460,24 @@ html, body {
     }
 }
 
-.equipe-linha-divisoria{
+.equipe-linha-divisoria {
     width: 90%;
     height: 0px;
     outline: 1px black solid;
     align-self: center;
     justify-self: center;
 }
-.equipe-subcard-cargo{
+
+.equipe-subcard-cargo {
     width: 317px;
     text-align: center;
     color: black;
     font-size: 20px;
-    
+
     font-weight: 400;
 }
 
-.equipe-card-linha-acima{
+.equipe-card-linha-acima {
     display: flex;
     gap: 40px;
     width: 100%;
@@ -448,15 +486,32 @@ html, body {
     margin-top: 4%;
     margin-bottom: 4%;
 }
-.equipe-card-linha-abaixo{
+
+.equipe-card-linha-abaixo {
     display: flex;
     gap: 40px;
     width: 100%;
     justify-content: center;
     align-content: center;
+
 }
+
+/*Fale Conosco*/
+.sectionTitle-talk {
+    padding: 0.5vw;
+    border-radius: 10px;
+    text-align: center;
+    width: 19vw;
+    font-size: 2.5rem;
+    background-color: #B9FF66;
+    font-family: "Space Grotesk";
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-weight: 700;
+}
+
 /*Footer*/
-.footer{
+.footer {
     width: 100%;
     height: 500px;
     border-radius: 50px 50px 0px 0px;
@@ -465,12 +520,12 @@ html, body {
     align-items: center;
 }
 
-.img-footer{
+.img-footer {
     width: 500px;
     padding-top: 150px;
 }
 
-.footer-fundo{
+.footer-fundo {
     background-color: #191A23;
     width: 90%;
     height: 500px;
@@ -480,13 +535,13 @@ html, body {
     align-items: center;
 }
 
-.footer-conteudo{
+.footer-conteudo {
     width: 90%;
     height: 500px;
-    
+
 }
 
-.text-footer{
+.text-footer {
     margin-top: -170px;
     color: white;
     margin-left: 50%;
@@ -495,15 +550,18 @@ html, body {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 17px;
 }
-.title-footer{
+
+.title-footer {
     background-color: #B9FF66;
     color: black;
     width: 40%;
     border-radius: 10px;
     margin-bottom: 0px;
     line-height: 30px;
+    padding: 10px;
 }
-.baixo-footer{
+
+.baixo-footer {
     color: white;
     display: flex;
     font-size: 15px;
@@ -514,14 +572,16 @@ html, body {
     padding-top: 10px;
 }
 
-.redes-footer{
+.redes-footer {
     margin-left: 300px;
 }
-.icon-footer{
+
+.icon-footer {
     width: 60px;
     margin-top: -10px;
     padding-left: 40px;
 }
-hr{
+
+hr {
     margin-top: 50px;
 }
