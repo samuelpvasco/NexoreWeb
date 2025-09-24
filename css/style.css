@@ -124,7 +124,7 @@ body {
 /*Serviços*/
 .services {
     width: 95vw;
-    height: 10vh;
+    height: 6vh;
     margin-top: 1vh;
     margin-left: 2vw;
     display: flex;
@@ -693,4 +693,59 @@ input[type="radio"] {
 
 hr {
     margin-top: 50px;
+}
+
+
+/* Feedbacks*/
+
+.feedbacks{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.cardFeedback{
+    border-radius:40px;
+    width: 80%;
+    height: 600px;
+    background-color:#191A23;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.carousel-feedback{
+    margin-top: 12vh;
+    width: 180%;
+    height: 300px;
+    display: inline-flex;
+    justify-content: center;
+
+}
+.block-main{
+    height: auto;
+    width: 800px;
+    display: flex;
+
+}
+.block-carousel{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../imgs/balao-card.svg');
+}
+
+.texto-block{
+    margin-top: -25px;
+    font-size: 18px;
+    text-align: justify;
+    color: white;
+    font-family: 'Space Grotesk';
+    width: 500px;
+    text-align-last: left;
 }
