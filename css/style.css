@@ -51,8 +51,9 @@ body {
 
 .navbar-item {
     display: inline-block;
-    height: 100%;
+    height: auto;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
     transition: 0.3s ease, transform 0.3s ease;
 }
@@ -200,10 +201,9 @@ body {
 .card-h2 {
     margin-left: 30px;
     width: 300px;
-    background-color: white;
     font-size: 2vw;
     font-family: 'Space Grotesk', sans-serif;
-    color: #191A23;
+    color: white;
     border-radius: 10px 10px 10px 0px;
     padding: 4px;
     margin-top: 40px;
@@ -212,10 +212,9 @@ body {
 .card-h3 {
 
     margin-left: 30px;
-    background-color: white;
     font-size: 2vw;
     font-family: 'Space Grotesk', sans-serif;
-    color: #191A23;
+    color: white;
     border-radius: 0px 0px 10px 10px;
     padding: 4px;
 }
@@ -229,6 +228,13 @@ body {
 }
 
 .service-icon {
+    margin-left: 90px;
+    margin-top: -200px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.service-icon2 {
     margin-left: 90px;
     margin-top: -200px;
     user-select: none;
@@ -704,7 +710,13 @@ hr {
     display: flex;
     justify-content: center;
 }
-
+.slide{
+    width: 100%;
+    align-items: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
 .cardFeedback{
     border-radius:40px;
     width: 80%;
@@ -716,23 +728,26 @@ hr {
 }
 
 .carousel-feedback{
+    transition: transform 0.5s ease-in-out;
     margin-top: 12vh;
-    width: 180%;
+    width: 100%;
+    width: max-content; 
     height: 300px;
     display: inline-flex;
     justify-content: center;
 
 }
 .block-main{
-    height: auto;
-    width: 800px;
+    width: auto;
     display: flex;
-
+    flex-direction: column;
+    height: 400px;
 }
 .block-carousel{
     align-items: center;
     display: flex;
     justify-content: center;
+    height: 300px;
     width: 800px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -748,4 +763,47 @@ hr {
     font-family: 'Space Grotesk';
     width: 500px;
     text-align-last: left;
+}
+
+.titulo-feedback{
+    margin-top: 30px;
+    margin-left: 140px;
+    color:#b9ff66; 
+    font-family: 'Space Grotesk';
+}
+
+.desc-feedback{
+    color: white;
+    margin-left: 140px;
+    font-size: 16px;
+    font-family: 'Space Grotesk';
+}
+
+.controls-carousel{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    margin-top: 100px;
+    
+}   
+.pointers{
+    width: 200px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.pointer1{
+    display: flex;
+    justify-content: center;
+}
+
+.seta-esquerda, .seta-direita {
+
+  cursor: pointer;
+  z-index: 1;
 }
