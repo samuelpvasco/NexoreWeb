@@ -336,6 +336,7 @@ body {
 }
 
 .projetos-subcard {
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -503,6 +504,7 @@ body {
 }
 
 /*Fale Conosco*/
+
 .sectionTitle-talk {
     padding: 0.5vw;
     border-radius: 10px;
@@ -704,6 +706,19 @@ hr {
 
 /* Feedbacks*/
 
+.feedback-titulo{
+   padding: 0.5vw;
+    border-radius: 10px;
+    text-align: center;
+    width: 19vw;
+    font-size: 2.5rem;
+    background-color: #B9FF66;
+    font-family: "Space Grotesk";
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-weight: 700; 
+}
+
 .feedbacks{
     width: 100%;
     height: auto;
@@ -831,7 +846,7 @@ hr {
 
 /*Introdução e NavBar*/
 
-@media (max-width: 1000px) and (min-width: 500px) {
+@media (max-width: 1000px) and (min-width: 400px) {
     /*navbar*/
     .navBar {
         height: 90px;
@@ -916,7 +931,8 @@ hr {
         justify-content: right;
         flex-direction: column;
         align-items:baseline;
-        padding-left: 50px;
+        padding: 0;
+        margin-left: 25px;
     }
     .sectionTitle{
         width: 150px;
@@ -970,7 +986,8 @@ hr {
         justify-content: center;
         width: 100%;
         margin-top: 80px;
-        background-color: red;
+        margin-left: -20px;
+        
     }
     .projetos-titulo{
         width: 150px;
@@ -988,9 +1005,98 @@ hr {
         width: 80%;
     }
     .projetos-card{
+        margin-top: 50px;
         border-radius: 30px;
-        flex-direction: column;
-        height: auto;
         width: 350px;
+    }
+    .projetos-subcard{
+        display: flex;
+        flex-direction: column;
+    }
+    .projetos-coluna{
+        margin-left: -20px;
+        width: 350px;
+         border-right: none;
+         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .projetos-coluna:last-child {
+        border-bottom: none;
+    }
+
+    /*Equipes*/
+    .equipe-linha1{
+        margin-left: 45px !important;
+    }
+    .equipe-titulo{
+        width: 130px;
+        
+    }
+
+    .projetos-e-equipe-subtitulo{
+        margin-left: 0;
+    }
+
+    .equipe-card-linha-acima{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .equipe-card-linha-abaixo{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Feedbacks*/
+
+    .feedback-titulo{
+        width: 220px;
+    }
+    .cardFeedback{
+        width: 100%;
+        border-radius: 0px;
+        
+    }
+    .block-carousel{
+        width: 440px;
+        margin-left:20px;
+        margin-right:20px;
+    }
+
+    .texto-block{
+        width: 400px;
+        font-size: 14px;
+    }
+    .titulo-feedback{
+        margin-top: -30px;
+        font-size: 20px;
+        margin-left: 60px;
+    }
+    .desc-feedback{
+        margin-left: 60px;
+    }
+    .carousel-feedback{
+        margin-left:20px;
+        margin-right:20px;
+    }
+
+    /*Fale Conosco*/
+
+    .sectionTitle-talk{
+        width: 260px;
+    }
+
+    .form-bg{
+        width: 450px;
+    }
+    .form-talk{
+        width: 300px;
+    }
+    .radio-label{
+        font-size: 20px;
+        width: 200px;
     }
 }
