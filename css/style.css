@@ -962,7 +962,35 @@ hr {
         width: 120px;
         height: auto;
     }
+
+    /*Projetos*/
     .projetos{
-        margin-top: 500px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 80px;
+        background-color: red;
+    }
+    .projetos-titulo{
+        width: 150px;
+        font-size: 35px;
+    }
+    .projetos-linha1{
+        flex-direction: column;
+        align-items: baseline;
+        height: auto;
+        padding-left: 50px;
+    }
+    .projetos-e-equipe-subtitulo{
+        font-size: 16px;
+        text-align: justify;
+        width: 80%;
+    }
+    .projetos-card{
+        border-radius: 30px;
+        flex-direction: column;
+        height: auto;
+        width: 350px;
     }
 }
