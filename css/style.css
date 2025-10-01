@@ -870,20 +870,33 @@ hr {
         cursor: pointer;
         z-index: 1000;
     }
-
+    .links{
+        margin-top: 145px !important;
+        padding-top: 20px;
+        border-top: 1px solid #B9FF66;
+        display: flex;
+        padding-bottom: 20px;
+        padding-left: 30px;
+    }
+    .side-bar-item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .img-menu{
+        width: 10%;
+    }
     .side-bar {
-        border: 2px solid #B9FF66;
         border-radius: 20px 0px 0px 10px;
         background-color: #191A23;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 250px;
-        height: 60vh;
+        width: 300px;
+        height: auto;
         transform: translateY(-900px); /* escondido */
         color:white;
         transition: transform 0.5s ease-in-out;
-        padding: 40px;
         gap: 30px;
     }
     .side-bar.ativo {
