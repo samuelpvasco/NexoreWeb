@@ -79,9 +79,10 @@ body {
 }
 
 .btn-tema {
-    margin-right: 50px;
     cursor: pointer;
     user-select: none;
+    margin-right: 80px;
+    margin-left: 200px;
 }
 
 
@@ -170,20 +171,15 @@ body {
 }
 
 .services-card-container {
+    transition: transform 0.5s ease-in-out;
     width: 97%;
-    height: 38vh;
-    display: flex;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     justify-content: center;
-    margin-left: 30px;
+    margin-left: 70px;
     margin-bottom: 3%;
-}
-
-.services-card-line {
-    width: 90%;
-    height: 32vh;
-    display: flex;
-    justify-items: center;
-    gap: 30px;
 }
 
 .services-card {
@@ -810,4 +806,163 @@ hr {
 
   cursor: pointer;
   z-index: 1;
+}
+
+.btn-menu{
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.side-bar{
+    display: none;
+}
+
+.setas{
+    display: none;
+}
+.pointersServices{
+    display: none;
+}
+
+
+/* Responsividade */
+
+/*Introdução e NavBar*/
+
+@media (max-width: 1000px) and (min-width: 500px) {
+    /*navbar*/
+    .navBar {
+        height: 90px;
+        font-size: 18px;
+    }
+
+    .img-logo {
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    .links-navbar {
+        display: none;
+    }
+
+    .btn-menu{
+        display: block;
+        width: 50px;
+        height: 30px;
+        margin-left: 85%;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .side-bar {
+        border: 2px solid #B9FF66;
+        border-radius: 20px 0px 0px 10px;
+        background-color: #191A23;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 250px;
+        height: 60vh;
+        transform: translateY(-900px); /* escondido */
+        color:white;
+        transition: transform 0.5s ease-in-out;
+        padding: 40px;
+        gap: 30px;
+    }
+    .side-bar.ativo {
+        transform: translateY(80px); /* aparece */
+    }
+    .links{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        gap:20px
+    }
+    .link{
+        color: white;
+    }
+        .btn-tema {
+        display: none;
+    }
+
+    /*intro*/
+    .intro{
+        margin-top: -20px;
+        width: 100%;
+    }
+    .phone-img{
+        display: none;
+    }
+
+    .texto-intro{
+        padding:50px;
+        margin-top: 60px;
+        width: 90%;
+        justify-content: center;
+    }
+    .texto-grande{
+        font-size:45px
+    }
+    .texto-pequeno{
+        font-size:18px;
+        width: 100%;
+    }
+
+    /*Serviços*/
+    .servicesContent{
+        height: auto;
+        justify-content: right;
+        flex-direction: column;
+        align-items:baseline;
+        padding-left: 50px;
+    }
+    .sectionTitle{
+        width: 150px;
+        font-size: 35px;
+    }
+    .servicesDescription{
+        font-size: 16px;
+        text-align: left;
+        width: 100%;
+    }
+    .services-card-container{
+        grid-template-columns: 1fr;
+        width: 200%;
+        margin-left: 120%;
+    }
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+ .services-card-container::-webkit-scrollbar {
+        display: none;
+    }
+    .services-card{
+        width: 370px;
+        height: 200px;
+    }
+    .card-h2{
+        font-size: 20px;
+       
+    }
+    .card-h3{
+        font-size: 20px;
+       
+    }
+    .services-seta{
+        margin-top: 40px;
+        margin-left: 30px;
+        height: 35px;
+    }
+    .service-icon{
+        margin-bottom: 50px;
+        margin-left: 250px;
+        width: 120px;
+        height: auto;
+    }
+    .projetos{
+        margin-top: 500px;
+    }
 }

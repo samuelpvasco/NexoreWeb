@@ -3,6 +3,10 @@ const slides = document.querySelectorAll(".block-main");
 const prev = document.querySelector(".seta-esquerda");
 const next = document.querySelector(".seta-direita");
 const pontos = document.querySelectorAll(".pointer1");
+const menuBtn = document.querySelector(".btn-menu");
+const menu = document.querySelector(".side-bar");
+
+
 
 let index = 1; // começa no meio, como antes
 
@@ -44,3 +48,14 @@ prev.addEventListener("click", () => {
 
 // Inicializa
 updateCarousel();
+
+
+function ativarMenu() {
+    menu.classList.toggle("ativo");
+    setTimeout( ()=> {
+
+        menuBtn.src = menu.classList.contains("ativo") ? "imgs/menu-white.png" : "imgs/menu.svg";
+    }, 300);
+}
+
+menuBtn.addEventListener("click", ativarMenu);
