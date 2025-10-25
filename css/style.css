@@ -967,7 +967,7 @@ hr {
     }
     body{
         overflow-x: hidden;
-        overflow-y: hidden;
+        overflow-y: auto;
     }
     .services-card-container::-webkit-scrollbar {
         display: none;
