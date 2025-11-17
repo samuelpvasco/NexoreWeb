@@ -46,6 +46,7 @@ html, body {
     height: 50px;
     align-items: center;
     justify-content: space-between;
+    margin-right: 200px;
 }
 
 .link{
