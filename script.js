@@ -59,3 +59,38 @@ function ativarMenu() {
 }
 
 menuBtn.addEventListener("click", ativarMenu);
+const form = document.querySelector(".form-talk");
+const popup = document.getElementById("popup");
+const fecharPopup = document.getElementById("fecharPopup");
+
+form.querySelector("button").addEventListener("click", () => {
+
+    // pega valores
+    const nome = document.getElementById("nome").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const mensagem = document.getElementById("mensagem").value.trim();
+
+    // valida
+    if (!nome || !email || !mensagem) {
+        alert("Preencha todos os campos obrigatórios.");
+        return;
+    }
+
+    // mostra popup
+    popup.style.display = "flex";
+
+    // limpa form
+    form.reset();
+});
+
+// botão fechar popup
+fecharPopup.addEventListener("click", () => {
+    popup.style.display = "none";
+});
+
+// fechar clicando fora
+popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+        popup.style.display = "none";
+    }
+});
