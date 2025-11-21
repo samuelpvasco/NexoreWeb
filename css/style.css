@@ -825,11 +825,12 @@ hr {
     }
     .links-navbar {
         display: none;
-    }
+    }   
     .btn-menu{
         display: block;
         width: 50px;
         height: 30px;
+        margin-top: -20px;
         margin-left: 85%;
         cursor: pointer;
         z-index: 1000;
@@ -862,6 +863,9 @@ hr {
         color:white;
         transition: transform 0.5s ease-in-out;
         gap: 30px;
+    }
+    .mode{
+        cursor: pointer;
     }
     .side-bar.ativo {
         transform: translateY(80px); /* aparece */
@@ -1381,13 +1385,13 @@ body.dark .green-bg {
 }
 
 body.dark .black-bg {
-    background-color: #1c1c25;
+    background-color: #11111a;
 }
 
 
 /* Projetos e equipe */
 body.dark .projetos-card {
-    background-color: #1c1c25;
+    background-color: #11111a;
 }
 
 

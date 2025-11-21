@@ -52,9 +52,14 @@ updateCarousel();
 
 function ativarMenu() {
     menu.classList.toggle("ativo");
-    setTimeout( ()=> {
-
-        menuBtn.src = menu.classList.contains("ativo") ? "imgs/menu-white.png" : "imgs/menu.svg";
+    setTimeout(()=> {
+        const isDark = document.body.classList.contains("dark");
+        // em modo escuro mantém ícone branco; no modo claro alterna conforme estado do menu
+        if (isDark) {
+            menuBtn.src = "imgs/menu-white.png";
+        } else {
+            menuBtn.src = menu.classList.contains("ativo") ? "imgs/menu-white.png" : "imgs/menu.svg";
+        }
     }, 300);
 }
 
@@ -100,6 +105,7 @@ function mudarImagemTema() {
     const imgTema = document.getElementsByClassName("btn-tema");
     const imgIllustration = document.getElementsByClassName("phone-img");
     const imgIllustration2 = document.getElementsByClassName("form-illustration");
+    const imgMenuBtn = document.getElementsByClassName("btn-menu");
 
     if (document.body.classList.contains("dark")) {
         for (let img of imgLogo) {
@@ -112,7 +118,10 @@ function mudarImagemTema() {
             img.src = "imgs/dark/IllustrationWhite.svg";
         }
         for (let img of imgIllustration2) {
-            img.src = "imgs/dark/Illustration2white.png";
+            img.src = "imgs/dark/Illustration2White.png";
+        }
+        for (let img of imgMenuBtn) {
+            img.src = "imgs/menu-white.png";
         }
     } else {
         for (let img of imgLogo) {
@@ -126,6 +135,9 @@ function mudarImagemTema() {
         }
         for (let img of imgIllustration2) {
             img.src = "imgs/Illustration.svg";
+        }
+        for (let img of imgMenuBtn) {
+            img.src = "imgs/menu.svg";
         }
     }
 }
@@ -144,9 +156,21 @@ function toggleDarkMode() {
 }
 
 // Mantém o tema salvo ao carregar a página
-window.onload = () => {
+window.addEventListener("DOMContentLoaded", () => {
     const tema = localStorage.getItem("tema");
     if (tema === "dark") {
         document.body.classList.add("dark");
+    } else {
+        document.body.classList.remove("dark");
     }
-};
+
+    // atualiza todas as imagens conforme o tema atual
+    mudarImagemTema();
+
+    // garante src correto do botão de menu caso seja selecionado por querySelector
+    if (menu && menuBtn) {
+        menuBtn.src = document.body.classList.contains("dark") || menu.classList.contains("ativo")
+            ? "imgs/menu-white.png"
+            : "imgs/menu.svg";
+    }
+});
