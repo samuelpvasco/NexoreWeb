@@ -46,7 +46,7 @@ html, body {
     height: 50px;
     align-items: center;
     justify-content: space-between;
-    margin-right: 200px;
+    margin-right: -100px;
 }
 
 .link{
@@ -210,7 +210,6 @@ html, body {
     color: white;
     margin-top: 40px;
 }
-
 .card-h3 {
     margin-left: 30px;
     font-size: 2vw;
@@ -1320,7 +1319,7 @@ hr {
 }
 
 .popup-content {
-    background: #fff;
+    background: #191A23;
     padding: 25px;
     width: 300px;
     border-radius: 12px;
@@ -1337,9 +1336,93 @@ hr {
     margin-top: 15px;
     width: 100%;
     padding: 10px;
-    background: #1ea36a;
+    background: #8dd646;
     border: none;
     border-radius: 8px;
-    color: white;
+    color: black;
     cursor: pointer;
+}
+
+/* =====================
+       MODO ESCURO
+===================== */
+
+body.dark {
+    background-color: #000;
+    color: white;
+}
+
+/* Navbar */
+body.dark .navBar {
+    background-color: #000;
+}
+body.dark .link {
+    color: white;
+}
+body.dark .linha {
+    background-color: white;
+}
+
+/* Introdução */
+body.dark .texto-pequeno,
+body.dark .texto-grande {
+    color: white;
+}
+
+body.dark .btn-agenda {
+    background-color: #B9FF66;
+    color: black;
+}
+
+/* Cards de serviços */
+body.dark .green-bg {
+    background-color: #8dd646;
+    color: black;
+}
+
+body.dark .black-bg {
+    background-color: #1c1c25;
+}
+
+
+/* Projetos e equipe */
+body.dark .projetos-card {
+    background-color: #1c1c25;
+}
+
+
+/* Fale Conosco */
+body.dark .form-bg {
+    background-color: #11111a;
+}
+body.dark label {
+    color: white;
+}
+body.dark input,
+body.dark textarea {
+    background-color: #1c1c25;
+    color: white;
+    border-color: #b9ff66;
+}
+body.dark button {
+    background-color: #B9FF66;
+    color: black;
+}
+
+/* Footer */
+body.dark .footer-fundo {
+    background-color: #11111a;
+}
+body.dark .text-footer,
+body.dark .baixo-footer {
+    color: white;
+}
+
+/* cor das descrições das sections no modo escuro */
+body.dark .sectionDescription {
+    color: white;
+}
+
+body.dark .content-talk{
+    background-color: #000;
 }

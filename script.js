@@ -94,3 +94,59 @@ popup.addEventListener("click", (e) => {
         popup.style.display = "none";
     }
 });
+
+function mudarImagemTema() {
+    const imgLogo = document.getElementsByClassName("img-logo");
+    const imgTema = document.getElementsByClassName("btn-tema");
+    const imgIllustration = document.getElementsByClassName("phone-img");
+    const imgIllustration2 = document.getElementsByClassName("form-illustration");
+
+    if (document.body.classList.contains("dark")) {
+        for (let img of imgLogo) {
+            img.src = "imgs/dark/NexoreWhite.png";
+        }
+        for (let img of imgTema) {
+            img.src = "imgs/dark/temaWhite.png";
+        }
+        for (let img of imgIllustration) {
+            img.src = "imgs/dark/IllustrationWhite.svg";
+        }
+        for (let img of imgIllustration2) {
+            img.src = "imgs/dark/Illustration2white.png";
+        }
+    } else {
+        for (let img of imgLogo) {
+            img.src = "imgs/nexore-logo.png";
+        }
+        for (let img of imgTema) {
+            img.src = "imgs/tema-img.png";
+        }
+        for (let img of imgIllustration) {
+            img.src = "imgs/phone-img.png";
+        }
+        for (let img of imgIllustration2) {
+            img.src = "imgs/Illustration.svg";
+        }
+    }
+}
+
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle("dark");
+
+    // Salva o tema escolhido
+    if (body.classList.contains("dark")) {
+        localStorage.setItem("tema", "dark");
+    } else {
+        localStorage.setItem("tema", "light");
+    }
+    mudarImagemTema();
+}
+
+// Mantém o tema salvo ao carregar a página
+window.onload = () => {
+    const tema = localStorage.getItem("tema");
+    if (tema === "dark") {
+        document.body.classList.add("dark");
+    }
+};
